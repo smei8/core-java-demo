@@ -2,17 +2,14 @@ package classesandobjects;
 
 public class FordFigo {
 	
-	// declare a variable - instance variable
-	int modelNo;
+	//variables - property, state, attribute
+	//instance variable - scope, can be access by any method wthin this class
+	int modelNumber;
 	String color;
 	String carType;
 	
+	//methods - function, actions the object can perform
 	String unlockCar() {
-		
-		// declare a variable - local variables
-		
-		int temp = 50;
-		
 		return "FordFigo unlocked";
 	}
 	
@@ -21,16 +18,13 @@ public class FordFigo {
 	}
 	
 	String accelerate() {
-		return "FordFigo accelerated!";
+		return "FordFigo accelerated";
 	}
-	
-	String applyBreak() {
-		mannualBrakeSystem();
-		return "FordFigo applied brake!";
+	String applyBrake() {
+		manualBrakeSystem();
+		return "FordFigo appied brakes";
 	}
-	
-	void mannualBrakeSystem() {
-		System.out.println("Manual Brakes applied!");
+	void manualBrakeSystem() {
+		System.out.println("Manual Brakes Applied");
 	}
-	
 }
