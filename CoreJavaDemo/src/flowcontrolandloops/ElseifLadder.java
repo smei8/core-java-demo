@@ -11,7 +11,8 @@ public class ElseifLadder {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Please enter a number: ");
 		int number = scan.nextInt();
-
+		scan.close();
+			
 		String output = " ";
 		if (number < 0) {
 			output = number + " is less than 0";
